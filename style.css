@@ -64,7 +64,7 @@ ul {
     gap: 18px
 }
 
-button {
+#sign-up {
     align-content: center;
     padding: 5px 20px;  
     background-color: #3882f6;
@@ -73,6 +73,10 @@ button {
     border: hidden; 
     color:#e5e7eb; 
     font-weight: bold;
+}
+
+#sign-up:hover  {
+    background-color: #669aee;
 }
 
 .banner-left, .banner-right {
@@ -116,13 +120,80 @@ button {
     justify-content: center;
     gap: 52px; 
     margin-top: 48px; 
+    margin-bottom: 48px;
 }
 
 .quote-section {
-    display: flex;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    height: 50vh; 
+    background-color:#e5e7eb;
 }
 
 .quote {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    position: relative; 
+    width: 650px;
+}
+
+blockquote {
+    font-size: 36px;
+    font-style: italic;
+    color:#1f2937;
+}
+
+figcaption {
+    position: absolute;
+    bottom: 0; 
+    right: 0; 
+    font-weight: bold;
+}
+
+.quote, figcaption {
+    margin: 45px; 
+}
+
+.cta-wrapper {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.cta-box {
+    display: flex; 
+    margin-top: 48px;
+    gap: 200px;
+    background-color:#3882f6;
+    padding: 48px; 
+    border-radius: 8px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#cta-sign-up {
+    border:2px solid #e5e7eb; 
+    align-content: center;
+    padding: 5px 20px;  
+    background-color: #3882f6;
+    border-radius: 8px;
+    overflow: hidden;
+    color:#e5e7eb; 
+    font-weight: bold;
+}
+
+#cta-sign-up:hover {
+    background-color: #669aee;
+}
+
+.cta-headline {
+    font-size: 18px;
+    font-weight: bold;
+    color:#e5e7eb; 
+}
+
+.cta-text {
+    color:#e5e7eb; 
 }
